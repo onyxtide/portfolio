@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Athanasiou - AI Data Professional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a24;
+            --text-primary: #f0f0f5;
+            --text-secondary: #a0a0b0;
+            --accent: #6366f1;
+            --accent-light: #818cf8;
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --border: rgba(255, 255, 255, 0.08);
+            --tag-bg: rgba(99, 102, 241, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .title {
+            font-size: 1.25rem;
+            color: var(--accent-light);
+            font-weight: 500;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero .location {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent-light);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 48px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-light);
+            margin-bottom: 24px;
+            font-weight: 600;
+        }
+
+        /* Summary */
+        .summary {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .skill-category {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .skill-category h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: var(--tag-bg);
+            color: var(--accent-light);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* Experience */
+        .experience-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 16px;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .experience-item:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .experience-header h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .experience-header .company {
+            color: var(--accent-light);
+            font-size: 0.95rem;
+        }
+
+        .experience-meta {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .date-badge {
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .employment-type {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+        }
+
+        .experience-details {
+            list-style: none;
+        }
+
+        .experience-details li {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-left: 20px;
+            position: relative;
+            margin-bottom: 8px;
+        }
+
+        .experience-details li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* Education */
+        .education-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .education-item h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .education-item .grade {
+            color: var(--accent-light);
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .education-item .description {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Certifications */
+        .certs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 12px;
+        }
+
+        .cert-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 14px 18px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cert-item::before {
+            content: '✦';
+            color: var(--accent);
+        }
+
+        /* Languages */
+        .languages-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .language-badge {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .language-badge .level {
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            margin-left: 6px;
+        }
+
+        /* Additional Info */
+        .additional-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 16px;
+        }
+
+        .additional-section h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--accent-light);
+        }
+
+        .additional-section ul {
+            list-style: none;
+        }
+
+        .additional-section li {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-left: 16px;
+            position: relative;
+            margin-bottom: 6px;
+        }
+
+        .additional-section li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 48px 0;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .contact-links {
+                gap: 16px;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Mario Athanasiou</h1>
+                <p class="title">AI Data Annotation • AI QA • Greek Language Specialist</p>
+                <p class="location">East Attica, Greece</p>
+                <div class="contact-links">
+                    <a href="tel:+306949071542">+30 694 907 1542</a>
+                    <a href="mailto:venusxmercury@protonmail.com">venusxmercury@protonmail.com</a>
+                    <a href="https://linkedin.com/in/mario-athanasiou" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/onyxtide" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary">
+            <h2 class="section-title">About</h2>
+            <p class="summary">
+                Early-career AI data professional with hands-on experience in Greek-language annotation, transcription QA, PII
+                labeling and auditing, and prompt-response quality review. Strong track record of following complex guidelines,
+                producing consistent written rationales, and spotting quality, privacy, and workflow issues. Brings prior customer and
+                technical support experience, which translates into careful communication, edge-case handling, and dependable
+                execution in remote, process-driven teams.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2 class="section-title">Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>AI & Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AI Data Annotation</span>
+                        <span class="skill-tag">PII Classification</span>
+                        <span class="skill-tag">Prompt Engineering QA</span>
+                        <span class="skill-tag">Transcription QA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Greek (Native)</span>
+                        <span class="skill-tag">English (C2)</span>
+                        <span class="skill-tag">Arabic (Learning)</span>
+                        <span class="skill-tag">Mandarin (Learning)</span>
+                        <span class="skill-tag">Spanish (Learning)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Tech</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Google Sheets</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Linux (Ubuntu)</span>
+                        <span class="skill-tag">Python (Fundamentals)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Quality Assurance</span>
+                        <span class="skill-tag">Guideline Adherence</span>
+                        <span class="skill-tag">Structured Feedback</span>
+                        <span class="skill-tag">Customer Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience">
+            <h2 class="section-title">Experience</h2>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>AI Data Annotator - Music & Language (Greek)</h3>
+                        <p class="company">Welo Data (via HumanSignal)</p>
+                    </div>
+                    <div class="experience-meta">
+                        <span class="date-badge">Apr 2026 - Present</span>
+                        <span class="employment-type">Freelance • Remote</span>
+                    </div>
+                </div>
+                <ul class="experience-details">
+                    <li>Annotate and evaluate AI-generated Greek playlist titles for a Spotify music recommendation project</li>
+                    <li>Assess outputs for language accuracy, regional appropriateness, title relevance, fluency, and handling of intellectual property references</li>
+                    <li>Provide concise written justifications to support model evaluation and improvement</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>General AI Tutor / Prompt Engineering QA</h3>
+                        <p class="company">Mindrift</p>
+                    </div>
+                    <div class="experience-meta">
+                        <span class="date-badge">Dec 2025 - Present</span>
+                        <span class="employment-type">Freelance • Remote</span>
+                    </div>
+                </div>
+                <ul class="experience-details">
+                    <li>Review and refine AI-agent outputs before delivery, checking whether responses meet client instructions and formatting requirements</li>
+                    <li>Build detailed Google Sheets lists matched to exact brand and product specifications</li>
+                    <li>Collaborate with QA teammates on ground-truth datasets used to improve generative AI systems</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Greek Audio Transcription QA Specialist</h3>
+                        <p class="company">DatApp Technology</p>
+                    </div>
+                    <div class="experience-meta">
+                        <span class="date-badge">Sep 2025 - Jan 2026</span>
+                        <span class="employment-type">Contract • Remote</span>
+                    </div>
+                </div>
+                <ul class="experience-details">
+                    <li>Quality-checked Greek audio transcriptions for speech-to-text datasets against project guidelines</li>
+                    <li>Verified timestamps, transcription quality, and speaker labels, and documented recurring ASR error patterns</li>
+                    <li>Contributed feedback that supported guideline updates and workflow refinements</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Data Annotation Auditor & Specialist (Greek Language) - PII Data</h3>
+                        <p class="company">iMerit Technology</p>
+                    </div>
+                    <div class="experience-meta">
+                        <span class="date-badge">Jun 2025 - Jan 2026</span>
+                        <span class="employment-type">Contract • Remote</span>
+                    </div>
+                </div>
+                <ul class="experience-details">
+                    <li>Labeled personally identifiable information in Greek social media text across 70+ PII categories, then moved into auditing work</li>
+                    <li>Reviewed annotator outputs for accuracy, consistency, and compliance with GDPR-aligned privacy frameworks</li>
+                    <li>Distinguished between direct, strong indirect, and weak indirect identifiers while following secure data-handling procedures</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Customer Success Agent</h3>
+                        <p class="company">Plum</p>
+                    </div>
+                    <div class="experience-meta">
+                        <span class="date-badge">Jul 2024 - May 2025</span>
+                        <span class="employment-type">Full-time • Hybrid</span>
+                    </div>
+                </div>
+                <ul class="experience-details">
+                    <li>Supported customers of a wealth-management platform on transfers, funds, pensions, and regulatory edge cases</li>
+                    <li>Handled escalations requiring FCA and consumer-duty awareness and partnered with engineering on bug investigation</li>
+                    <li>Reported user pain points and product feedback that informed UI/UX improvements</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Technical Support Representative</h3>
+                        <p class="company">Movate (for Microsoft)</p>
+                    </div>
+                    <div class="experience-meta">
+                        <span class="date-badge">Dec 2020 - Mar 2023</span>
+                        <span class="employment-type">Seasonal • Remote</span>
+                    </div>
+                </div>
+                <ul class="experience-details">
+                    <li>Delivered 1:1 support across Windows, Xbox, and Microsoft Community with a 95% customer satisfaction rating across 2,000+ interactions</li>
+                    <li>Participated in a CRM data-cleaning and analysis project covering 50,000+ customer interactions</li>
+                    <li>Created response templates and documentation adopted internally, reducing handling time and improving knowledge sharing</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>Music School of Pallini</h3>
+                <p class="grade">Apolytirion (General Certificate of Secondary Education) - Music Performance | Grade: 16.8/20</p>
+                <p class="description">2011 - 2017 • Combined general secondary education with intensive study in music theory, piano, accordion, and vocal performance; training that strengthened discipline, pattern recognition, and structured practice.</p>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section id="certifications">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-item">AI and Public Health - DeepLearning.AI (Coursera), 2025</div>
+                <div class="cert-item">Foundations of Responsible AI - LinkedIn Learning, 2025</div>
+                <div class="cert-item">GitHub Copilot Fundamentals: AI Paired Programming - Pluralsight, 2025</div>
+                <div class="cert-item">Financial Analyst Certification - Workearly, 2025</div>
+                <div class="cert-item">Functional Neuroanatomy Course - Boston NeuroDynamics, 2025</div>
+                <div class="cert-item">Certificate of Proficiency in English (ECPE) and Certificate in Advanced English (CAE), 2021</div>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section id="additional">
+            <h2 class="section-title">Additional</h2>
+            <div class="additional-grid">
+                <div class="additional-section">
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Greek <span class="level">— Native</span></li>
+                        <li>English <span class="level">— C2</span></li>
+                        <li>Lebanese Arabic <span class="level">— Learning</span></li>
+                        <li>Mandarin Chinese <span class="level">— Learning</span></li>
+                        <li>Spanish <span class="level">— Learning</span></li>
+                    </ul>
+                </div>
+                <div class="additional-section">
+                    <h3>Citizen Science</h3>
+                    <ul>
+                        <li>EyeWire, Foldit, Folding@home (600,000+ points), Stall Catchers</li>
+                        <li>Long-term interest in computational biology, neuroscience, and open science</li>
+                    </ul>
+                </div>
+                <div class="additional-section">
+                    <h3>Volunteer Work</h3>
+                    <ul>
+                        <li>Translation & Refugee Support - Ukrainian Aid Center in Greece</li>
+                        <li>March 2022 - June 2022</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Built with care • <a href="https://linkedin.com/in/mario-athanasiou" target="_blank">LinkedIn</a> • <a href="https://github.com/onyxtide" target="_blank">GitHub</a></p>
+        </footer>
+    </main>
+</body>
+</html>
