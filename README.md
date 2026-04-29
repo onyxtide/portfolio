@@ -1,7 +1,7 @@
 # Mario Athanasiou — Portfolio
 
 > **AI Data · Language QA · Greek Annotation Specialist**  
-> East Attica, Greece · [LinkedIn](https://linkedin.com/in/mario-athanasiou) · [Email](mailto:venusxmercury@protonmail.com)
+> East Attica, Greece · [LinkedIn](https://linkedin.com/in/mario-athanasiou) · [Email](mailto:venusxmercury@protonmail.com) · [📄 CV](https://onyxtide.github.io/MarioAthanasiou_CV.pdf)
 
 🌐 **Live site → [onyxtide.github.io](https://onyxtide.github.io)**
 
