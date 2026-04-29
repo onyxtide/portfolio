@@ -31,9 +31,9 @@ I've contributed to projects for Spotify music recommendation (Welo Data), speec
 
 ## Beyond the job titles
 
-I'm also a **citizen scientist** — mapping neurons on EyeWire, folding proteins on Foldit, and logging 600,000+ points on Folding@home. These projects sit at the crossroads of open science and computational biology, which is where a lot of my long-term curiosity lives.
+I'm also a **citizen scientist** — logging 1,392,762 points (83 work units, Rank #309,609 Top 1M Donor) on Folding@home and analysing brain blood flow data for Alzheimer's research on Stall Catchers. These projects sit at the crossroads of open science and computational biology, which is where a lot of my long-term curiosity lives.
 
-I paint in gouache with a Studio Ghibli-inspired palette, write fantasy fiction under the pen name **Mario Kade**, and am currently learning Lebanese Arabic, Mandarin Chinese, and Spanish alongside native Greek and C2 English.
+I paint in gouache with a Studio Ghibli-inspired palette, write fantasy fiction under the pen name **Mario Kade**, and am currently learning Mandarin Chinese and Spanish alongside native Greek and C2 English.
 
 I care about privacy in practice, not just in principle — which is reflected in how I work with data professionally and how I operate online personally.
 
@@ -64,9 +64,7 @@ I care about privacy in practice, not just in principle — which is reflected i
 
 ## Tech & tools
 
-`Python` `Git` `GitHub` `Linux (Ubuntu)` `Docker` `Google Sheets` `Label Studio` `QA workflows` `Markdown`
-
-Learning: `Rust` · `MATLAB` · `bioinformatics tooling`
+`Python (Scripting & Automation)` `Git` `GitHub` `Linux (Ubuntu)` `Google Sheets` `Label Studio` `QA workflows` `Markdown`
 
 ---
 
