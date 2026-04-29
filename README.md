@@ -50,7 +50,8 @@ Specialisms:
 
 | Role | Organisation | Period | Type |
 |---|---|---|---|
-| General AI Tutor / Prompt Engineering QA | Mindrift | Dec 2025 – present | Freelance · Remote |
+| AI Response Evaluator / Annotator | LILT | Apr 2026 – present | Freelance · Remote |
+| General AI Tutor / Prompt Engineering QA | Mindrift | Dec 2025 – Mar 2026 | Freelance · Remote |
 | Greek Audio Transcription QA Specialist | DatApp Technology | Sep 2025 – Jan 2026 | Contract · Remote |
 | Data Annotation Auditor & Specialist – PII | iMerit Technology | Jun 2025 – Jan 2026 | Contract · Remote |
 | Customer Success Agent | Plum (fintech) | Jul 2024 – May 2025 | Full-time · Hybrid |
