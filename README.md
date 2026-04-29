@@ -1,80 +1,114 @@
-# Mario Athanasiou — Portfolio
+# Mario Athanasiou
 
-> **AI Data · Language QA · Greek Annotation Specialist**  
-> East Attica, Greece · [LinkedIn](https://linkedin.com/in/mario-athanasiou) · [Email](mailto:venusxmercury@protonmail.com) · [📄 CV](https://onyxtide.github.io/MarioAthanasiou_CV.pdf)
+### AI Data Professional · Greek Language Specialist · Citizen Scientist
 
-🌐 **Live site → [onyxtide.github.io](https://onyxtide.github.io)**
+<p align="left">
+  <img src="https://img.shields.io/badge/Greek-Native%20Speaker-4ade80?style=flat-square&logoColor=white" alt="Greek Native">
+  <img src="https://img.shields.io/badge/English-C2%20Proficiency-22d3ee?style=flat-square&logoColor=white" alt="English C2">
+  <img src="https://img.shields.io/badge/Languages-Mandarin%20%26%20Spanish-6366f1?style=flat-square&logoColor=white" alt="Learning Mandarin & Spanish">
+  <img src="https://img.shields.io/badge/Status-Open%20to%20Work-4ade80?style=flat-square&logoColor=white" alt="Open to Work">
+</p>
 
----
-
-## What this is
-
-This is my personal portfolio site — a single-page overview of who I am, what I do, and what I care about. It's hosted via GitHub Pages and built without frameworks or bloat: just clean HTML, honest copy, and a focus on substance over spectacle.
-
----
-
-## Who I am
-
-I work at the intersection of **language, data quality, and AI systems** — specifically on the human side of the pipeline that makes models more accurate, fair, and linguistically grounded.
-
-My background covers:
-
-- **AI data annotation & auditing** — PII labeling, transcription QA, output evaluation, ground-truth dataset work
-- **Greek-language specialisation** — native fluency applied to annotation, QA, localization, and transcription projects
-- **Privacy-conscious data handling** — GDPR-aligned workflows, PII classification across 70+ categories
-- **Prompt & response quality review** — checking AI outputs against client instructions, formatting specs, and accuracy benchmarks
-- **Customer & technical support** — 2,000+ interactions, escalation handling, CRM data work (Microsoft/Movate, Plum fintech)
-
-I've contributed to projects for Spotify music recommendation (Welo Data), speech-to-text datasets (DatApp), and generative AI improvement (Mindrift). I take written rationales seriously and follow complex guidelines carefully.
+<p align="left">
+  <a href="https://linkedin.com/in/mario-athanasiou"><img src="https://img.shields.io/badge/LinkedIn-mario--athanasiou-0A66C2?style=flat-square&logo=linkedin" alt="LinkedIn"></a>
+  <a href="mailto:venusxmercury@protonmail.com"><img src="https://img.shields.io/badge/Email-venusxmercury%40protonmail.com-c14438?style=flat-square&logo=protonmail" alt="Email"></a>
+  <a href="https://github.com/onyxtide"><img src="https://img.shields.io/badge/GitHub-onyxtide-6e5494?style=flat-square&logo=github" alt="GitHub"></a>
+  <a href="https://onyxtide.github.io/portfolio"><img src="https://img.shields.io/badge/Portfolio-Live%20Site-7c6af7?style=flat-square&logo=google-chrome" alt="Live Site"></a>
+</p>
 
 ---
 
-## Beyond the job titles
+## 🔬 Citizen Science
 
-I'm also a **citizen scientist** — logging 1,392,762 points (83 work units, Rank #309,609 Top 1M Donor) on Folding@home and analysing brain blood flow data for Alzheimer's research on Stall Catchers. These projects sit at the crossroads of open science and computational biology, which is where a lot of my long-term curiosity lives.
+> *"The intersection of open science and computational biology is where a lot of my long-term curiosity lives."*
 
-I paint in gouache with a Studio Ghibli-inspired palette, write fantasy fiction under the pen name **Mario Kade**, and am currently learning Mandarin Chinese and Spanish alongside native Greek and C2 English.
+| Metric | Value |
+|---|---|
+| 🧬 **Folding@home Points** | 1,392,762 |
+| 🧪 **Work Units** | 83 |
+| 🏆 **Rank** | #309,609 — **Top 1M Donor** |
+| 🧠 **Stall Catchers** | Brain blood flow analysis for Alzheimer's research |
 
-I care about privacy in practice, not just in principle — which is reflected in how I work with data professionally and how I operate online personally.
+I'm a firm believer that you don't need a lab coat to contribute to serious science. Folding@home and Stall Catchers are active commitments, not afterthoughts.
 
 ---
 
-## Selected experience
+## ⚡ What I Do
 
-| Role | Organisation | Period |
+I work at the **human side of the AI pipeline** — making language models more accurate, fair, and linguistically grounded through careful annotation, QA, and data auditing.
+
+Specialisms:
+- 🇬🇷 **Greek-language AI data** — Native fluency applied to annotation, transcription QA, and localization
+- 🔒 **PII labeling & auditing** — 70+ categories, GDPR-aligned workflows
+- ✅ **Prompt & response QA** — Evaluating AI outputs against client specs and formatting guidelines
+- 🎵 **Music & language data** — Worked on Spotify music recommendation datasets
+- 💬 **Transcription QA** — Greek speech-to-text data quality review
+
+---
+
+## 💼 Experience
+
+| Role | Organisation | Period | Type |
+|---|---|---|---|
+| AI Data Annotator – Music & Language (Greek) | Welo Data · HumanSignal | Apr 2026 – present | Freelance · Remote |
+| General AI Tutor / Prompt Engineering QA | Mindrift | Dec 2025 – present | Freelance · Remote |
+| Greek Audio Transcription QA Specialist | DatApp Technology | Sep 2025 – Jan 2026 | Contract · Remote |
+| Data Annotation Auditor & Specialist – PII | iMerit Technology | Jun 2025 – Jan 2026 | Contract · Remote |
+| Customer Success Agent | Plum (fintech) | Jul 2024 – May 2025 | Full-time · Hybrid |
+| Technical Support Representative | Movate · for Microsoft | Dec 2020 – Mar 2023 | Seasonal · Remote |
+
+---
+
+## 🛠️ Tools & Tech
+
+<p>
+  <img src="https://img.shields.io/badge/Git%20&%20GitHub-181717?style=flat-square&logo=github" alt="Git/GitHub">
+  <img src="https://img.shields.io/badge/Python-3776ab?style=flat-square&logo=python" alt="Python">
+  <img src="https://img.shields.io/badge/Linux%20(Ubuntu)-e95420?style=flat-square&logo=ubuntu" alt="Ubuntu">
+  <img src="https://img.shields.io/badge/Google%20Sheets-34a853?style=flat-square&logo=google" alt="Google Sheets">
+  <img src="https://img.shields.io/badge/Label%20Studio-9b59b6?style=flat-square&logoColor=white" alt="Label Studio">
+  <img src="https://img.shields.io/badge/Linux%20bash-4eaa25?style=flat-square&logo=gnu-bash" alt="Bash">
+</p>
+
+---
+
+## 🏅 Certifications
+
+| Certification | Issuer | Year |
 |---|---|---|
-| AI Data Annotator – Music & Language (Greek) | Welo Data / HumanSignal | Apr 2026 – present |
-| General AI Tutor / Prompt Engineering QA | Mindrift | Dec 2025 – present |
-| Greek Audio Transcription QA Specialist | DatApp Technology | Sep 2025 – Jan 2026 |
-| Data Annotation Auditor & Specialist – PII | iMerit Technology | Jun 2025 – Jan 2026 |
-| Customer Success Agent | Plum (fintech) | Jul 2024 – May 2025 |
-| Technical Support Representative | Movate (for Microsoft) | Dec 2020 – Mar 2023 |
+| ✦ AI and Public Health | DeepLearning.AI / Coursera | 2025 |
+| ✦ Foundations of Responsible AI | LinkedIn Learning | 2025 |
+| ✦ GitHub Copilot Fundamentals | Pluralsight | 2025 |
+| ✦ Functional Neuroanatomy | Boston NeuroDynamics | 2025 |
+| ✦ Financial Analyst Certification | Workearly | 2025 |
+| ✦ ECPE & CAE (English Proficiency) | Cambridge / Michigan | 2021 |
 
 ---
 
-## Selected certifications
+## 🌍 Beyond the Job Titles
 
-- AI and Public Health — DeepLearning.AI / Coursera (2025)
-- Foundations of Responsible AI — LinkedIn Learning (2025)
-- GitHub Copilot Fundamentals — Pluralsight (2025)
-- Functional Neuroanatomy — Boston NeuroDynamics (2025)
-- Certificate of Proficiency in English (ECPE) & Certificate in Advanced English (CAE) (2021)
-
----
-
-## Tech & tools
-
-`Python (Scripting & Automation)` `Git` `GitHub` `Linux (Ubuntu)` `Google Sheets` `Label Studio` `QA workflows` `Markdown`
+- 🎨 Gouache painter — Studio Ghibli-inspired palette
+- ✍️ Fantasy fiction writer — **Mario Kade**
+- 🎹 Classical piano, accordion, and vocal training
+- 🗣️ Learning **Mandarin Chinese** and **Spanish**
+- 🔒 Privacy in practice: Tor, I2P, Monero
+- 🤝 Ukrainian Aid Center Greece — translation & refugee support (2022)
 
 ---
 
-## Contact
+## 📬 Get in Touch
 
-If you're working on annotation, localization QA, language data, or AI evaluation — especially anything involving Greek — I'd be glad to hear from you.
+Looking for annotation, localization QA, language data, or AI evaluation work — especially anything involving Greek — I'd be glad to hear from you.
 
-📬 [venusxmercury@protonmail.com](mailto:venusxmercury@protonmail.com)  
-🔗 [linkedin.com/in/mario-athanasiou](https://linkedin.com/in/mario-athanasiou)
+| | |
+|---|---|
+| ✉️ | [venusxmercury@protonmail.com](mailto:venusxmercury@protonmail.com) |
+| 💼 | [linkedin.com/in/mario-athanasiou](https://linkedin.com/in/mario-athanasiou) |
+| 🐙 | [github.com/onyxtide](https://github.com/onyxtide) |
+| 🌐 | [onyxtide.github.io/portfolio](https://onyxtide.github.io/portfolio) |
 
 ---
 
-<sub>Built and maintained by Mario Athanasiou · Hosted on GitHub Pages · No trackers, no analytics, no cookies</sub>
+<p align="center">
+  <em>No trackers · No analytics · No cookies · Built on GitHub Pages</em>
+</p>
