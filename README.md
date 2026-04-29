@@ -84,6 +84,22 @@ Specialisms:
 
 ---
 
+## 🚀 Projects
+
+### 🧠 [Oligodendrosite](https://oligodendrosite.com/)
+> Interactive Neuroscience Learning Platform
+
+An interactive neuroscience education platform vibecoded from scratch — covering neurons & action potentials, synapses, neural networks, glia, sleep science, and beyond. Features real-time simulations, interactive visualizations, a full 6-chapter curriculum with 2025 research citations, and mobile-responsive design.
+
+| | |
+|---|---|
+| 📚 **Chapters** | 6 — from neurons to glymphatics |
+| 🎮 **Features** | Interactive simulations, real-time visualizations, clinical correlations |
+| 🔬 **Research** | Sourced citations from 2025 neuroscience |
+| 🌐 **Live** | [oligodendrosite.com](https://oligodendrosite.com/) |
+
+---
+
 ## 🌍 Beyond the Job Titles
 
 - 🎨 Gouache painter — Studio Ghibli-inspired palette
