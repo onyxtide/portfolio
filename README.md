@@ -24,9 +24,9 @@
 
 | Metric | Value |
 |---|---|
-| 🧬 **Folding@home Points** | 1,392,762 |
-| 🧪 **Work Units** | 83 |
-| 🏆 **Rank** | #309,609 — **Top 1M Donor** |
+| 🧬 **Folding@home Points** | 2,434,973 |
+| 🧪 **Work Units** | 139 |
+| 🏆 **Rank** | #257,836 — **Top 300K Donor** |
 | 🧠 **Stall Catchers** | Brain blood flow analysis for Alzheimer's research |
 
 I'm a firm believer that you don't need a lab coat to contribute to serious science. Folding@home and Stall Catchers are active commitments, not afterthoughts.
